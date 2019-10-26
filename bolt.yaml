@@ -1,5 +1,14 @@
-pcp:
-  service-url: https://master.inf.puppet.vm:8143
-  cacert: /etc/puppetlabs/puppet/ssl/certs/ca.pem
-  token-file: /root/.puppetlabs/token
-  task-environment: production
+modulepath: [./modules,./site-modules]
+inventoryfile: "./inventory.yaml"
+concurrency: 10
+format: human
+ssh:
+ host-key-check: false
+winrm:
+  ssl: false
+log:
+  console:
+    level: info
+  ./debug.log:
+    level: info
+    append: false
