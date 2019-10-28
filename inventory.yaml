@@ -1,7 +1,7 @@
 groups:
   - name: linux
     nodes:
-      - 1.2.3.4
+      - 1.2.3.4 .  # REPLACE ME
     config:
       transport: ssh
       ssh:
@@ -11,7 +11,7 @@ groups:
         private-key: /path/to/key
   - name: windows
     nodes:
-      - 5.6.7.8
+      - 5.6.7.8 .   # REPLACE ME
     config:
       transport: winrm
       winrm:
