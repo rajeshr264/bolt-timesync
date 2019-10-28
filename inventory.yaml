@@ -7,14 +7,13 @@ groups:
       ssh:
         host-key-check: false
         user: centos
-        run-as: root
-        private-key: /path/to/key
+        private-key: /path/to/key   # REPLACE ME
   - name: windows
     nodes:
       - 5.6.7.8 .   # REPLACE ME
     config:
       transport: winrm
       winrm:
-        user: vagrant
-        password: vagrant
+        user: administrator
+        password: REPLACEME  # REPLACE ME
         ssl: false
