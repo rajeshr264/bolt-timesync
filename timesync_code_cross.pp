@@ -1,4 +1,4 @@
-plan tools::timesync_code(
+plan tools::timesync_code_cross(
   TargetSpec $nodes,
 ) {
   apply_prep($nodes)
